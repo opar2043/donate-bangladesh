@@ -32,8 +32,7 @@ document.querySelector('.btn1').addEventListener('click',function(){
     let addMoney = textFuntion('.addMoney');
     let decreaseMoney = textFuntion('.decreaseMoney');
     let date = new Date();
-    console.log(date);
-    // console.log(input1 , addMoney);
+
 
 
     // validation
@@ -85,12 +84,12 @@ document.querySelector('.btn1').addEventListener('click',function(){
 // for btn-2
 document.querySelector('#btn2').addEventListener('click',function(){
     let input2 = inputIdName('input2');
-    console.log(input2);
+    // console.log(input2);
     
     let addMoney = textFuntion('.addMoney1');
-    console.log(addMoney);
+    // console.log(addMoney);
     let decreaseMoney = textFuntion('.decreaseMoney');
-    console.log(decreaseMoney);
+    // console.log(decreaseMoney);
     let date = new Date();
     
 
@@ -113,7 +112,7 @@ document.querySelector('#btn2').addEventListener('click',function(){
     // arithmeteic operation
 
     let newDonateBalance = addMoney + input2;
-    console.log(newDonateBalance);
+    // console.log(newDonateBalance);
     document.querySelector('.addMoney1').innerText = newDonateBalance;
 
 
@@ -130,7 +129,7 @@ document.querySelector('#btn2').addEventListener('click',function(){
     let historyArea = document.getElementById('historyArea');
 
     let mainDiv= document.createElement('div');
-    console.log(mainDiv);
+    // console.log(mainDiv);
     mainDiv.innerHTML = `
         <h3 class="font-bold text-lg"> ${input2} Taka is Donated For Relief Flood at Feni,Bangladesh.</h3>
         <p class="text-sm">${date}</p>
@@ -147,14 +146,14 @@ document.querySelector('#btn2').addEventListener('click',function(){
 // for btn-3
 document.getElementById('btn3').addEventListener('click',function(){
 
-    console.log('object');
+    // console.log('object');
     let input3 = inputIdName('input3');
-    console.log(input3);
+    // console.log(input3);
     
     let addMoney = textFuntion('.addMoney3');
-    console.log(addMoney);
+    // console.log(addMoney);
     let decreaseMoney = textFuntion('.decreaseMoney');
-    console.log(decreaseMoney);
+    // console.log(decreaseMoney);
     let date = new Date();
     
 
@@ -192,7 +191,7 @@ document.getElementById('btn3').addEventListener('click',function(){
     let historyArea = document.getElementById('historyArea');
 
     let mainDiv= document.createElement('div');
-    console.log(mainDiv);
+    // console.log(mainDiv);
     mainDiv.innerHTML = `
         <h3 class="font-bold text-lg"> ${input3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
         <p class="text-sm">${date}</p>
@@ -213,7 +212,7 @@ document.getElementById('donation').addEventListener('click',function(){
 
     document.getElementById('donation').classList.add('bg-indigo-600','text-white')
     document.getElementById('history').classList.remove('bg-indigo-600','text-white')
-    document.getElementById('bigDiv').classList.remove('h-[100vh]')
+    // document.getElementById('bigDiv').classList.remove('h-[50vh]')
 })
 
 document.getElementById('history').addEventListener('click',function(){
@@ -222,12 +221,9 @@ document.getElementById('history').addEventListener('click',function(){
 
     document.getElementById('history').classList.add('bg-indigo-600','text-white')
     document.getElementById('donation').classList.remove('bg-indigo-600','text-white')
-    document.getElementById('bigDiv').classList.remove('h-[100vh]')
-})
+    // document.getElementById('bigDiv').classList.remove('h-[50vh]');
+   document.getElementById('another').classList.add('hidden');
 
-// blog section
-document.getElementById('blog').addEventListener("click",function(){
-    window.location.href = '/faq.html'
 })
        
 
