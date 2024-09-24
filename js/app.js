@@ -50,6 +50,10 @@ document.querySelector('.btn1').addEventListener('click',function(){
         return;
     }
 
+    document.getElementById('modal').classList.remove('hidden');
+
+    // document.getElementById('my_modal_1').classList.remove('hidden');
+
     let newDonateBalance = addMoney + input1 ;
     document.querySelector('.addMoney').innerText = newDonateBalance;
 
@@ -103,6 +107,8 @@ document.querySelector('#btn2').addEventListener('click',function(){
         document.getElementById('input2').value = '';
         return;
     }
+
+    document.getElementById('modal').classList.remove('hidden');
 
     // arithmeteic operation
 
@@ -166,6 +172,7 @@ document.getElementById('btn3').addEventListener('click',function(){
         return;
     }
 
+    document.getElementById('modal').classList.remove('hidden');
     // arithmeteic operation
 
     let newDonateBalance = addMoney + input3;
@@ -223,3 +230,9 @@ document.getElementById('blog').addEventListener("click",function(){
     window.location.href = '/faq.html'
 })
        
+
+// close modal
+document.getElementById('close').addEventListener('click',function(){
+    document.getElementById('modal').classList.add('hidden');
+ })
+ 
