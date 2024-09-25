@@ -321,8 +321,8 @@ const problems = [
                         <div class="mt-4">
                             <h3 class="text-sm font-bold">Side Effect</h3>
                           <p class="text-gray-600 text-sm">${problem.sideEffect}</p>
-                          <button class="read mt-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out">
-                            Read More
+                          <button onclick="calling()" class="read mt-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition duration-300 ease-in-out">
+                            Serve Country Click Here
                           </button>
                         </div>
                       </div>
@@ -335,8 +335,12 @@ const problems = [
   }
   banglaProblems()
 
-  let count = 0;
+  let counts = 0;
   function calling(){
-      let read = document.querySelector('.read');
-      
+    document.getElementById('countDiv').classList.remove('hidden');
+    alert('We Are Very Much excited and Happy for Valuable Addition')
+    counts++;
+    document.getElementById('count').innerText = counts;
+    
+    
   }
